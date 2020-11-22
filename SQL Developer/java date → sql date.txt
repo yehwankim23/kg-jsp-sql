@@ -1,0 +1,7 @@
+﻿java date -> sql date
+
+SimpleDateFormat transFormat = new SimpleDateFormat("yyyy-MM-dd");
+String hireDateStr = request.getParameter("hireDate");
+java.sql.Date hireDate = new java.sql.Date(new java.util.Date().getTime());
+hireDate = new java.sql.Date(transFormat.parse(hireDateStr).getTime());
+emp.setHireDate(hireDate);
