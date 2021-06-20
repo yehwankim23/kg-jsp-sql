@@ -1,2 +1,1 @@
-# kg-jsp-sql
-2018
+# JSP (SQL)
